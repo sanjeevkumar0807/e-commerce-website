@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Mall</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/text.css" />
+    <link rel="shortcut icon" href="https://thumbs.dreamstime.com/b/full-size-photo-big-full-family-mom-mommy-dad-daddy-little-kids-have-free-time-go-walk-shopping-center-buy-hold-bags-full-size-199070725.jpg" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img
+            src="data:image/png;base64,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"
+          />
+        </div>
+        <ul>
+          <li>
+            <a
+              href="https://www.amazon.in/?tag=admpdesktopin-21&ref=pd_sl_a685B6CF02FEC789495EDA41E6&mfadid=adm"
+              target="_blank"
+            >
+              Home</a
+            >
+          </li>
+          <li><a href="https://www.google.com" target="_blank"> About</a></li>
+          <li><a href="https://www.chrome.com" target="_blank">Contact</a></li>
+          <li>
+            <a href="https://www.youtube.com/t-series" target="_blank">More</a>
+          </li>
+        </ul>
+        <div class="search">
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Search Your Favourite Here"
+          />
+          <button class="btn">Search</button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="sanjeev">
+        <div class="slider">
+          <img
+            src="https://thumbs.dreamstime.com/b/full-size-photo-big-full-family-mom-mommy-dad-daddy-little-kids-have-free-time-go-walk-shopping-center-buy-hold-bags-full-size-199070725.jpg"
+          />
+        </div>
+        <div class="card">
+          <p><h3>Sports</h3></p>
+          <hr />
+          <div class="carditem">
+            <img
+              src="https://c.ndtvimg.com/2020-05/5mk12sl_football-generic-afp_625x300_06_May_20.jpg"
+            />
+            <p class="text">Football Size-05</p>
+            <b> <p class="text">50% off before 10June</p></b>
+            <p class="text">BUY NOW</p>
+          </div>
+          <div class="carditem">
+            <img
+              src="https://c.ndtvimg.com/2020-05/5mk12sl_football-generic-afp_625x300_06_May_20.jpg"
+            />
+            <p class="text">Football Size-05</p>
+            <b> <p class="text">50% off before 10June</p></b>
+            <p class="text">BUY NOW</p>
+          </div>
+          <div class="carditem">
+            <img
+              src="https://c.ndtvimg.com/2020-05/5mk12sl_football-generic-afp_625x300_06_May_20.jpg"
+            />
+            <p class="text">Football Size-05</p>
+            <b> <p class="text">50% off before 10June</p></b>
+            <p class="text">BUY NOW</p>
+          </div>
+          <div class="carditem">
+            <img
+              src="https://c.ndtvimg.com/2020-05/5mk12sl_football-generic-afp_625x300_06_May_20.jpg"
+            />
+            <p class="text">Football Size-05</p>
+            <b> <p class="text">50% off before 10June</p></b>
+            <p class="text">BUY NOW</p>
+          </div>
+          <div class="carditem">
+            <img
+              src="https://c.ndtvimg.com/2020-05/5mk12sl_football-generic-afp_625x300_06_May_20.jpg"
+            />
+            <p class="text">Football Size-05</p>
+            <b> <p class="text">50% off before 10June</p></b>
+            <p class="text">BUY NOW</p>
+          </div>
+          <div class="carditem">
+            <img
+              src="https://c.ndtvimg.com/2020-05/5mk12sl_football-generic-afp_625x300_06_May_20.jpg"
+            />
+            <p class="text">Football Size-05</p>
+            <b> <p class="text">50% off before 10June</p></b>
+            <p class="text">BUY NOW</p>
+          </div>
+          <div class="carditem">
+            <img
+              src="https://c.ndtvimg.com/2020-05/5mk12sl_football-generic-afp_625x300_06_May_20.jpg"
+            />
+            <p class="text">Football Size-05</p>
+            <b> <p class="text">50% off before 10June</p></b>
+            <p class="text">BUY NOW</p>
+          </div>
+          <div class="carditem">
+            <img
+              src="https://c.ndtvimg.com/2020-05/5mk12sl_football-generic-afp_625x300_06_May_20.jpg"
+            />
+            <p class="text">Football Size-05</p>
+            <b> <p class="text">50% off before 10June</p></b>
+            <p class="text">BUY NOW</p>
+          </div>
+          <div class="carditem">
+            <img
+              src="https://c.ndtvimg.com/2020-05/5mk12sl_football-generic-afp_625x300_06_May_20.jpg"
+            />
+            <p class="text">Football Size-05</p>
+            <b> <p class="text">50% off before 10June</p></b>
+            <p class="text">BUY NOW</p>
+          </div>
+          <div class="carditem">
+            <img
+              src="https://c.ndtvimg.com/2020-05/5mk12sl_football-generic-afp_625x300_06_May_20.jpg"
+            />
+            <p class="text">Football Size-05</p>
+            <b> <p class="text">50% off before 10June</p></b>
+            <p class="text">BUY NOW</p>
+          </div>
+        </div>
+        <div class="card">
+         <p> <h3>Sports</h3></p>
+          <hr />
+          <div class="carditem">
+            <img
+              src="https://c.ndtvimg.com/2020-05/5mk12sl_football-generic-afp_625x300_06_May_20.jpg"
+            />
+            <p class="text">Football Size-05</p>
+            <b> <p class="text">50% off before 10June</p></b>
+            <p class="text">BUY NOW</p>
+          </div>
+          <div class="carditem">
+            <img
+              src="https://c.ndtvimg.com/2020-05/5mk12sl_football-generic-afp_625x300_06_May_20.jpg"
+            />
+            <p class="text">Football Size-05</p>
+            <b> <p class="text">50% off before 10June</p></b>
+            <p class="text">BUY NOW</p>
+          </div>
+          <div class="carditem">
+            <img
+              src="https://c.ndtvimg.com/2020-05/5mk12sl_football-generic-afp_625x300_06_May_20.jpg"
+            />
+            <p class="text">Football Size-05</p>
+            <b> <p class="text">50% off before 10June</p></b>
+            <p class="text">BUY NOW</p>
+          </div>
+          <div class="carditem">
+            <img
+              src="https://c.ndtvimg.com/2020-05/5mk12sl_football-generic-afp_625x300_06_May_20.jpg"
+            />
+            <p class="text">Football Size-05</p>
+            <b> <p class="text">50% off before 10June</p></b>
+            <p class="text">BUY NOW</p>
+          </div>
+          <div class="carditem">
+            <img
+              src="https://c.ndtvimg.com/2020-05/5mk12sl_football-generic-afp_625x300_06_May_20.jpg"
+            />
+            <p class="text">Football Size-05</p>
+            <b> <p class="text">50% off before 10June</p></b>
+            <p class="text">BUY NOW</p>
+          </div>
+          <div class="carditem">
+            <img
+              src="https://c.ndtvimg.com/2020-05/5mk12sl_football-generic-afp_625x300_06_May_20.jpg"
+            />
+            <p class="text">Football Size-05</p>
+            <b> <p class="text">50% off before 10June</p></b>
+            <p class="text">BUY NOW</p>
+          </div>
+          <div class="carditem">
+            <img
+              src="https://c.ndtvimg.com/2020-05/5mk12sl_football-generic-afp_625x300_06_May_20.jpg"
+            />
+            <p class="text">Football Size-05</p>
+            <b> <p class="text">50% off before 10June</p></b>
+            <p class="text">BUY NOW</p>
+          </div>
+          <div class="carditem">
+            <img
+              src="https://c.ndtvimg.com/2020-05/5mk12sl_football-generic-afp_625x300_06_May_20.jpg"
+            />
+            <p class="text">Football Size-05</p>
+            <b> <p class="text">50% off before 10June</p></b>
+            <p class="text">BUY NOW</p>
+          </div>
+          <div class="carditem">
+            <img
+              src="https://c.ndtvimg.com/2020-05/5mk12sl_football-generic-afp_625x300_06_May_20.jpg"
+            />
+            <p class="text">Football Size-05</p>
+            <b> <p class="text">50% off before 10June</p></b>
+            <p class="text">BUY NOW</p>
+          </div>
+          <div class="carditem">
+            <img
+              src="https://c.ndtvimg.com/2020-05/5mk12sl_football-generic-afp_625x300_06_May_21.jpg"
+            />
+            <p class="text">Football Size-05</p>
+            <b> <p class="text">50% off before 10June</p></b>
+            <p class="text">BUY NOW</p>
+          </div>
+        </div>
+        <div class="card">
+        <p><h3>Sports</h3></p>
+          <hr />
+          <div class="carditem">
+            <img
+              src="https://c.ndtvimg.com/2020-05/5mk12sl_football-generic-afp_625x300_06_May_20.jpg"
+            />
+            <p class="text">Football Size-05</p>
+            <b> <p class="text">50% off before 10June</p></b>
+            <p class="text">BUY NOW</p>
+          </div>
+          <div class="carditem">
+            <img
+              src="https://c.ndtvimg.com/2020-05/5mk12sl_football-generic-afp_625x300_06_May_20.jpg"
+            />
+            <p class="text">Football Size-05</p>
+            <b> <p class="text">50% off before 10June</p></b>
+            <p class="text">BUY NOW</p>
+          </div>
+          <div class="carditem">
+            <img
+              src="https://c.ndtvimg.com/2020-05/5mk12sl_football-generic-afp_625x300_06_May_20.jpg"
+            />
+            <p class="text">Football Size-05</p>
+            <b> <p class="text">50% off before 10June</p></b>
+            <p class="text">BUY NOW</p>
+          </div>
+          <div class="carditem">
+            <img
+              src="https://c.ndtvimg.com/2020-05/5mk12sl_football-generic-afp_625x300_06_May_20.jpg"
+            />
+            <p class="text">Football Size-05</p>
+            <b> <p class="text">50% off before 10June</p></b>
+            <p class="text">BUY NOW</p>
+          </div>
+          <div class="carditem">
+            <img
+              src="https://c.ndtvimg.com/2020-05/5mk12sl_football-generic-afp_625x300_06_May_20.jpg"
+            />
+            <p class="text">Football Size-05</p>
+            <b> <p class="text">50% off before 10June</p></b>
+            <p class="text">BUY NOW</p>
+          </div>
+          <div class="carditem">
+            <img
+              src="https://c.ndtvimg.com/2020-05/5mk12sl_football-generic-afp_625x300_06_May_20.jpg"
+            />
+            <p class="text">Football Size-05</p>
+            <b> <p class="text">50% off before 10June</p></b> 
+            <p class="text">BUY NOW</p>
+          </div>
+          <div class="carditem">
+            <img
+              src="https://c.ndtvimg.com/2020-05/5mk12sl_football-generic-afp_625x300_06_May_20.jpg"
+            />
+            <p class="text">Football Size-05</p>
+            <b> <p class="text">50% off before 10June</p></b>
+            <p class="text">BUY NOW</p>
+          </div>
+          <div class="carditem">
+            <img
+              src="https://c.ndtvimg.com/2020-05/5mk12sl_football-generic-afp_625x300_06_May_20.jpg"
+            />
+            <p class="text">Football Size-05</p>
+            <b> <p class="text">50% off before 10June</p></b>
+            <p class="text">BUY NOW</p>
+          </div>
+          <div class="carditem">
+            <img
+              src="https://c.ndtvimg.com/2020-05/5mk12sl_football-generic-afp_625x300_06_May_20.jpg"
+            />
+            <p class="text">Football Size-05</p>
+            <b> <p class="text">50% off before 10June</p></b>
+            <p class="text">BUY NOW</p>
+          </div>
+          <div class="carditem">
+            <img
+              src="https://c.ndtvimg.com/2020-05/5mk12sl_football-generic-afp_625x300_06_May_20.jpg"
+            />
+            <p class="text">Football Size-05</p>
+            <b> <p class="text">50% off before 10June</p></b>
+            <p class="text">BUY NOW</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <b> All right are reserve with &copy;ShoppingMall.com</b>
+    </footer>
+  </body>
+</html>
